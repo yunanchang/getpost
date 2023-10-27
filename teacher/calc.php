@@ -12,7 +12,7 @@ if(!empty($_GET)){
         header("location:bmi.php?w=$weight&h=$height&bmi=$bmi");
        
     }else{
-        header("location:bmi.php?m=請輸入合法的身高或體資訊");
+        header("location:bmi.php?m=請輸入合法的身高或體資訊0");
     }
 /*     echo "體重:".$weight;
     echo "身高:".$height;
