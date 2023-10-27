@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>計算bmi</title>
+    <title>pin</title>
 </head>
 <body>
-    <h2>計算bmi</h2>
+    <h2>pin</h2>
     <?php
     if(!isset($_GET['bmi'])){
 
@@ -14,17 +14,17 @@
             echo "<span style='color:red'>".$_GET['m']."</span>";
         }
     ?>
-    <form action="calc.php">
+    <form action="pin02.php">
         <!--
  體重(公斤)/身高(公尺)的平方
 -->
 
         <div>
-            <label for="height">身高</label>
+            <label for="height">帳號</label>
             <input type="text" name='height' id='height'>
         </div>
         <div>
-            <label for="weight">體重</label>
+            <label for="weight">密碼</label>
             <input type="password" name='weight' id='weight'>
         </div>
         <div>
