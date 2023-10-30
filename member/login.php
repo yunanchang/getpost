@@ -1,9 +1,11 @@
+<?php include_once 'session.php';?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>會員登入</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         .login-block{
             padding:30px 40px;
@@ -36,9 +38,13 @@
     </style>
 </head>
 <body>
+<?php
+
+ include_once('header.php');
+ ?>
 <div class='login-block'>
-    <?php
-    session_start();
+<?php
+
     if(isset($_SESSION['error'])){
         echo "<span style='color:red'>".$_SESSION['error']."</span>";
         unset($_SESSION['error']);
