@@ -33,7 +33,7 @@
     echo "<h3 style='text-align:center'>";
     echo date("西元 $year 年 $month 月");
     echo "</h3>";
-    
+
     $thisFirstDay = date("{$year}-{$month}-1");
     $thisFirstDate = date('w', strtotime($thisFirstDay));
     $thisMonthDays = date("t" ,strtotime("{$year}-{$month}") );
