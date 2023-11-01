@@ -16,7 +16,6 @@ if(isset($_SESSION['login']) && !empty($_SESSION['login'])){
     $_SESSION['error']="沒有登入相關驗證，非法登入";
    header("location:login.php");
 }
-
 ?>
 
 </body>

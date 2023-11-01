@@ -1,7 +1,6 @@
 <?php
 include_once 'session.php';
 echo date('Y-m-d');
-
 ?>
 <!DOCTYPE html>
 <html lang="en">

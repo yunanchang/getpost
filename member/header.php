@@ -10,6 +10,8 @@
        
        <?php
 }else{
+       //14行 另一種寫法
+       // echo '<a href="login.php">登入</a>';
        ?>
        <a href="login.php">登入</a>
 
