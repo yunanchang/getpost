@@ -1,28 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>線上月曆</title>
-    <style>
-        table {
-            border-collapse: collapse;
-            border: 3px double #999;
-
-        }
-
-        td {
-            border: 1px solid #999;
-            padding: 5px 10px;
-            text-align: center;
-        }
-    </style>
-</head>
-
-<body>
-
-    <?php
+<?php
     if (isset($_GET['month']) && isset($_GET['year'])) {
         $month = $_GET['month'];
         $year = $_GET['year'];
@@ -32,9 +8,6 @@
     }
     echo "<h3 style='text-align:center'>";
     echo date("西元 $year 年 $month 月");
-    echo '<br>';
-    date_default_timezone_set('Asia/Taipei');
-    echo 'tody'.date('Y/m/d H:i:s');
     echo "</h3>";
     
     $thisFirstDay = date("{$year}-{$month}-1");
@@ -104,6 +77,3 @@
 
         echo "</table>";
         ?>
-</body>
-
-</html>
