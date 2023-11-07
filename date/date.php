@@ -6,8 +6,11 @@
         $month = date('m');
         $year = date("Y");
     }
-    echo "<h3 style='text-align:center'>";
+    echo "<h3>";
     echo date("西元 $year 年 $month 月");
+    echo '<br>';
+    date_default_timezone_set('Asia/Taipei');
+    echo date('m/d H:i:s');
     echo "</h3>";
     
     $thisFirstDay = date("{$year}-{$month}-1");
@@ -39,12 +42,13 @@
     // echo $weeks;
     ?>
 
-    <div style='width:264px;display:flex;margin:auto;justify-content:space-between'>
+    <div>
 
         <a href="?year=<?= $prevYear; ?>&month=<?= $prev; ?>">上一個月</a>
+     
         <a href="?year=<?= $nextYear; ?>&month=<?= $next; ?>">下一個月</a>
     </div>
-    <table style='width:264px;display:block;margin:auto'>
+    <table >
         <tr>
             <td>日</td>
             <td>一</td>
