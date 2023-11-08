@@ -86,9 +86,14 @@
             echo "<tr>";
             for ($j = 0; $j < 7; $j++) {
                 $addDays = 7 * $i + $j;
-                // echo $addDays."add<br>";
+                // echo $addDays."<br>";
+                
                 $thisCellDate = strtotime("+$addDays days", strtotime($firstCell));
-                if (date('w', $thisCellDate) == 0 || date('w', $thisCellDate) == 6) {
+                // if ($thisCellDate==strtotime($today = date("Y-m-d"))){echo "<td style='background:pink'>";}
+                // echo $thisCellDate .'<br>';
+                // echo date("Y-m-d",$thisCellDate);
+                // echo strtotime('now').'ww';
+                if (date('w', $thisCellDate) == 0 || date('w', $thisCellDate) == 6||$thisCellDate==strtotime($today = date("Y-m-d")) ) {
                     echo "<td style='background:pink'>";
                 } else {
                     echo "<td>";
