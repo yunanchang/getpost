@@ -41,27 +41,30 @@
         align-items:center;
         }
       
-        .date {
-            width: 65%;
-            height: 100vh;
-            background-color: lavenderblush;
-            margin: auto;
-            text-align: center;
-            
-        }
         #time{
-        /* background-color: sandybrown; */
-        padding-left: 10px;}
-        .img{background-color:bisque;
-        height: 85%;
-        }
-       a{
-         
-            text-decoration: none;}
-
-
+            /* background-color: sandybrown; */
+            padding-left: 10px;}
+            .img{background-color:bisque;
+                height: 85%;
+            }
+            a{
+                
+                text-decoration: none;}
+                
+                
+                .date {
+                    width: 65%;
+                    height: 100vh;
+                    background-color: lavenderblush;
+                    margin: auto;
+                    text-align: center;
+                   
+                    
+                    
+                }
 
         table {
+          
                 width: 100%;
                 height: 70%;
             
@@ -134,5 +137,6 @@
     </div>
     
 </body>
+
 
 </html>

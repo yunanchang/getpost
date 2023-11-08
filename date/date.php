@@ -94,5 +94,7 @@ if (($month - 1) < 1) {
         echo "</tr>";
     }
 
-    echo "</table>";
+ 
     ?>
+
+</table>
