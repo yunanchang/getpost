@@ -25,7 +25,7 @@
 <body>
 <div class="container">
     <div class="img">
-                   img2
+                   img2s
     </div>
     <div class='date'>
     <?php
