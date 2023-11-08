@@ -29,6 +29,8 @@
             background-color: lightgray;
             display: flex;
             flex-direction:column;
+            flex-wrap: wrap;
+          
             
             
         }
