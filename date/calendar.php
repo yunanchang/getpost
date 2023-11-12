@@ -9,11 +9,23 @@
     <style>
         * {
             box-sizing: 0;
+            border-radius: 80px;
+            /* background-image: url('img/1.jpeg'); */
+
+        }
+
+        body {
+
+            background-image: url('img/mountains-736886_1280.jpg');
+            background-size: cover;
+            /* 设置为 cover 以填充整个容器，保持纵横比例 */
+            background-repeat: no-repeat;
         }
 
         .container {
             margin: auto;
-            background-color: saddlebrown;
+
+            /* background-color: saddlebrown; */
 
             /* font-family:'Bradley Hand ITC'; */
             font-size: 50px;
@@ -23,12 +35,15 @@
             justify-content: center;
             /* 水平居中 */
             align-items: center;
+            border-radius: 80px;
+
         }
 
         .aside {
+            /* border-radius: 80px; */
             width: 35%;
             height: 100vh;
-            background-color: lightgray;
+            /* background-color: lightgray; */
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
@@ -38,7 +53,8 @@
         }
 
         .current-time {
-            background-color: green;
+
+            /* background-color: green; */
             height: 15%;
             display: flex;
             justify-content: center;
@@ -62,40 +78,45 @@
             text-decoration: none;
         }
 
-
-        /* background-color: sandybrown; */
-        padding-left: 10px;
-        }
-
-        .img {
-            background-color: bisque;
-            height: 85%;
-        }
-
-        a {
-
-            text-decoration: none;
-        }
-
-
         .date {
             width: 65%;
             height: 100vh;
-            background-color: lavenderblush;
+            /* background-color: lavenderblush; */
+            background-color: rgb(255, 255, 255, 0.3);
+
             margin: auto;
             text-align: center;
-            
             border: 1px solid #ccc;
             /* overflow: auto;  */
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3),
+                5px 5px 10px rgba(0, 0, 0, 0.3),
+                5px 5px 20px rgba(0, 0, 0, 0.3);
 
 
         }
 
         table {
-       
+
             width: 100%;
             height: 70%;
+        }
 
+        td:hover {
+            ;
+            color: red;
+            background-color: yellow !important;
+        }
+
+        .input {
+            font-size: 38px;
+        }
+
+        .input select {
+            font-size: 30px;
+        }
+
+        input[type="submit"] {
+            font-size: 30px;
         }
     </style>
 </head>
@@ -122,7 +143,7 @@
                 ?>
                 <!-- js -->
 
-                <!-- <i class="fa-solid fa-clock fa-bounce"></i> -->
+                <i class="fa-solid fa-clock fa-bounce"></i>
                 <div id="time"></div>
 
                 <script>
