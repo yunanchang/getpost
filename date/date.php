@@ -6,12 +6,13 @@
 //     $month = date('m');
 //     $year = date("Y");
 // }
-echo "<h3>";
+echo "<h3 class='shadowed-link'>";
 // echo date("西元 $year 年 $month 月");
 $monthday=date("{$year}-{$month}-1");
 echo date($year )."&nbsp&nbsp".date('F', strtotime($monthday));
 
 echo '<div style="font-size: 30px; padding: 5px; text-align: center; margin-left: 10px;">';
+
 echo '<a href="?year=', date('Y'), '&month=', date('n'), '">Today</a>';
 echo '</div>';
 
@@ -49,7 +50,7 @@ if (($month - 1) < 1) {
 <div class="input">
 
     <form action="">
-        <a href="?year=<?= $prevYear; ?>&month=<?= $prev; ?>">Last Month</a>
+        <a href="?year=<?= $prevYear; ?>&month=<?= $prev; ?>">Last Month &nbsp&nbsp</a>
         <!-- 查詢 -->
 <?php
 function generateOptions($start, $end, $label, $selectedValue) {
@@ -84,7 +85,7 @@ echo '<input type="submit" value="submit">';
 
 ?>
         <!-- 查詢 -->
-        <a href="?year=<?= $nextYear; ?>&month=<?= $next; ?>">Next Month</a>
+        <a href="?year=<?= $nextYear; ?>&month=<?= $next; ?>">&nbsp&nbsp Next Month</a>
     </form>
 </div>
 <table>
@@ -105,9 +106,10 @@ echo '<input type="submit" value="submit">';
             // echo $addDays."add<br>";
             $thisCellDate = strtotime("+$addDays days", strtotime($firstCell));
             if ($thisCellDate == strtotime($today = date("Y-m-d"))) {
-                echo "<td style='background:lightgreen'>";
+                echo "<td style=background:lightgreen>";
+             
             } elseif (date('w', $thisCellDate) == 0 || date('w', $thisCellDate) == 6) {
-                echo "<td style='background:pink'>";
+                echo "<td style='background:darkgreen'>";
             } else {
                 echo '<td>';
             }

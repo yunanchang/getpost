@@ -11,12 +11,12 @@
             box-sizing: 0;
             border-radius: 80px;
             /* background-image: url('img/1.jpeg'); */
-
+            font-family: Impact;
+          
         }
 
         body {
-
-            background-image: url('img/mountains-736886_1280.jpg');
+            background-image: url('img/13.jpeg');
             background-size: cover;
             /* 设置为 cover 以填充整个容器，保持纵横比例 */
             background-repeat: no-repeat;
@@ -27,7 +27,7 @@
 
             /* background-color: saddlebrown; */
 
-            /* font-family:'Bradley Hand ITC'; */
+           
             font-size: 50px;
             width: 80%;
             height: 80hv;
@@ -47,9 +47,7 @@
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-
-
-
+            
         }
 
         .current-time {
@@ -83,6 +81,7 @@
             height: 100vh;
             /* background-color: lavenderblush; */
             background-color: rgb(255, 255, 255, 0.3);
+         
 
             margin: auto;
             text-align: center;
@@ -102,7 +101,7 @@
         }
 
         td:hover {
-            ;
+          
             color: red;
             background-color: yellow !important;
         }
@@ -118,6 +117,11 @@
         input[type="submit"] {
             font-size: 30px;
         }
+        form a { color:red;}
+        .shadowed-link {
+    text-shadow: 10px 10px 16px rgba(0, 0, 0, 0.9);
+    /* background-color: rebeccapurple !important; */
+}
     </style>
 </head>
 
